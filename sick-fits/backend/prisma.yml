@@ -1,7 +1,5 @@
 datamodel: datamodel.prisma
 endpoint: "https://eu1.prisma.sh/luis-manuel-fernandez-camacho/sick-fits/dev"
 # secret: ${env:PRISMA_SECRET}
-# hooks:
-#   post-deploy:
-#     - echo "Deployment finished"
-#     - graphql get-schema -p prisma
+hooks:
+  post-deploy: graphql get-schema -p prisma.cmd
