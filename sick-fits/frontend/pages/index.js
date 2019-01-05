@@ -4,7 +4,9 @@ const Home = () => (
     <div>
         <p>Home</p>
         <Link href='/sell'>
-            sell        
+            <a>
+                sell
+            </a>
         </Link>
     </div>
 )
