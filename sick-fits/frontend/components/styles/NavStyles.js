@@ -13,11 +13,13 @@ const NavStyles = styled.ul`
     align-items: center;
     position: relative;
     text-transform: uppercase;
-    font-weight: 900;
     font-size: 1em;
     background: none;
     border: 0;
     cursor: pointer;
+    color: ${props => props.theme.color};
+    font-weight: 800;
+
     @media (max-width: 700px) {
       font-size: 10px;
       padding: 0 10px;
