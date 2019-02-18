@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Router from 'next/router';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
 import Form from './styles/Form';
@@ -39,10 +40,12 @@ class Signin extends Component {
           <Form
             method='post'
             onSubmit={async e => {
-            e.preventDefault();
-            await signin();
-            this.setState({ name: '', email: '', password: '' });
-          }}>
+              e.preventDefault();
+              await signin();
+              this.setState({ name: '', email: '', password: '' });
+              Router.replace('/')
+            }
+          }>
             <fieldset disabled={loading} aria-busy={loading}>
               <h2>Entra con tu cuenta</h2>
               <Error error={error}/>
