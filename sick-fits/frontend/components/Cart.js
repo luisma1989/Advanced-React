@@ -22,6 +22,7 @@ const TOGGLE_CART_MUTATION = gql`
     toggleCart @client
   }
 `;
+
 /* eslint-disable */
 const Composed = adopt({
   user: ({ render }) => <User>{render}</User>,
