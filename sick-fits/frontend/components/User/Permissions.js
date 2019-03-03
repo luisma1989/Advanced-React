@@ -1,8 +1,8 @@
 import { Query, Mutation } from 'react-apollo';
-import Error from './ErrorMessage';
+import Error from '../ErrorMessage';
 import gql from 'graphql-tag';
-import Table from './styles/Table';
-import SickButton from './styles/SickButton';
+import Table from '../styles/Table';
+import SickButton from '../styles/SickButton';
 import PropTypes from 'prop-types';
 
 const possiblePermissions = [

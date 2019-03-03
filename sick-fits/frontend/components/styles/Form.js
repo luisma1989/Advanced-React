@@ -31,6 +31,8 @@ const Form = styled.form`
     padding: 0.5rem;
     font-size: 1rem;
     border: 1px solid black;
+    background-color: ${props => props.theme.white};
+    color: ${({ theme }) => theme.black};
     &:focus {
       outline: 0;
       border-color: ${props => props.theme.red};

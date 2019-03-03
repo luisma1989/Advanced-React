@@ -38,6 +38,8 @@ const SearchStyles = styled.div`
     padding: 10px;
     border: 0;
     font-size: 2rem;
+    background-color: ${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.black};
     &.loading {
       animation: ${glow} 0.5s ease-in-out infinite alternate;
     }

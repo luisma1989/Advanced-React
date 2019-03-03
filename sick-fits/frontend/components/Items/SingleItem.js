@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
-import Error from './ErrorMessage';
+import Error from '../ErrorMessage';
 import styled from 'styled-components';
 import Head from 'next/head';
 
